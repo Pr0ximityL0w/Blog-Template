@@ -1,3 +1,6 @@
+
+<!-- Page Header -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About</title>
+    <title>Add Google-plus Comments Box to Jekyll website</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +72,7 @@
   
     
       <li>
-          <a href="/about.html" class="selected">About</a>
+          <a href="/about.html">About</a>
       </li>
     
   
@@ -99,14 +102,14 @@
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 
-    <header class="intro-header" style="background-image: url('http://localhost:4000/img/about-bg.jpg')">
+    <header class="intro-header" style="background-image: url('http://localhost:4000/img/post-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>About</h1>
+                        <h1>Add Google-plus Comments Box to Jekyll website</h1>
                         <hr class="small">
-                        <span class="subheading">This is Who I Am</span>
+                        <span class="subheading">Add Good plus to your Jekyll Blog with the step-by-step tutorial</span>
                     </div>
                 </div>
             </div>
@@ -114,19 +117,51 @@
     </header>
 
 
-    <!-- Main Content -->
+    <!-- Post Content -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h1 id="add-google-plus-comments-box-to-jekyll-website-or-any-static-page">Add Google-plus Comments Box to Jekyll website or any static page</h1>
+
+<p>This post shows how to step-by-step Add Google-plus Comments Box to Jekyll blog or to any static website. You can see the preview at bottom of this page. This website was build using Jekyll.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>If you are using Jekyll;</p>
+
+<p>1) Create <code class="highlighter-rouge">comments.html</code> file inside your <code class="highlighter-rouge">_includes</code> folder with below code</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  &lt;script src="https://apis.google.com/js/plusone.js"&gt;&lt;/script&gt;
+  
+  &lt;div class="g-comments"
+      data-href="<span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="p">}}{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="p">}}</span>"
+      data-width="642"
+      data-first_party_property="BLOGGER"
+      data-view_type="FILTERED_POSTMOD"&gt;
+  &lt;/div&gt;</code></pre></figure>
+
+<p>2) Now just make sure you have this property defined in your <code class="highlighter-rouge">_config.yml</code> file (replace the url with your website URL) View my <a href="https://github.com/steelx/jekyll-blog/blob/gh-pages/_config.yml">soruce code here!</a></p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  baseurl: http://jekyll-blog.com/</code></pre></figure>
+
+<p>3) include <code class="highlighter-rouge">comments.html</code> wherever you wana display Google plus comments, preferably inside posts layout file.</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">comments</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p>I hope this post was useful, please dont forget to Google PLUSONE this post or comment below.
+Please view the source code on your live website pressing <code class="highlighter-rouge">CMD/CTRL+ U</code> to check the generated URL on your webpage after commiting the files. If this doesnt work post your comments below and I will be glad to help you.</p>
+
+
+                </div>
             </div>
         </div>
-    </div>
+    </article>
 
     <hr>
+
+<!-- Footer -->
 
  
     <!-- Footer -->
@@ -179,3 +214,4 @@
 </body>
 
 </html>
+
