@@ -1,1 +1,5 @@
 markdown: kramdown
+paginate: 3
+
+gems:
+ - jekyll-paginate
