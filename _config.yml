@@ -1,4 +1,4 @@
-baseurl: "https://pr0ximityl0w.github.io/Blog-Template"
+url: "https://pr0ximityl0w.github.io/Blog-Template"
 markdown: kramdown
 paginate: 3
 
